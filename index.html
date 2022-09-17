@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="./script.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <section>
+        <p>Bill</p>
+        <input type="text" />
+      </section>
+      <section>
+        <p>Select Tip %</p>
+      </section>
+      <section>
+        <input type="radio" name="tip-percent" value="5%" id="five-perc" />
+        <label for="five-perc">5%</label>
+        <input type="radio" name="tip-percent" value="10%" id="ten-perc" />
+        <label for="ten-perc">10%</label>
+        <input type="radio" name="tip-percent" value="15%" id="fifteen-perc" />
+        <label for="fifteen-perc">15%</label>
+        <input type="radio" name="tip-percent" value="25%" id="twFive-perc" />
+        <label for="twFive-perc">25%</label>
+        <input type="radio" name="tip-percent" value="50%" id="fifty-perc" />
+        <label for="fifty-perc">50%</label>
+        <input type="radio" name="tip-percent" value="" id="five-per" />
+        <label for="five-perc"><input name="tip-percent" type="text" /></label>
+      </section>
+      <button>Submit</button>
+    </form>
+
+    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
