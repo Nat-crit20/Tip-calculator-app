@@ -1,0 +1,60 @@
+body {
+  height: 100vh;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.logo {
+  width: 75px;
+  margin-bottom: 4rem;
+}
+
+main {
+  background-color: white;
+  border-radius: 10px;
+  width: 60%;
+  height: 60vh;
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.input-container {
+  position: relative;
+  width: 240px;
+}
+
+#bill {
+  background-image: url("./images/icon-dollar.svg");
+}
+#num-people {
+  background-image: url("./images/icon-person.svg");
+}
+
+.input-container input {
+  background-position: left center;
+  background-repeat: no-repeat;
+  /* background-size: ; */
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  text-align: right;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.input-container img {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+}
