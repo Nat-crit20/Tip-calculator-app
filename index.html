@@ -27,34 +27,56 @@
     </style>
   </head>
   <body>
-    <form action="">
+    <img src="./images/logo.svg" alt="" />
+    <main>
       <section>
         <p>Bill</p>
-        <input type="text" />
+        <div>
+          <img src="./images/icon-dollar.svg" alt="" />
+          <input id="bill" type="text" name="bill" />
+        </div>
+      </section>
+      <section class="tip-container input-content">
+        <h3>Select tip %</h3>
+        <div class="tip-buttons">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <input id="custom-input" placeholder="Custom" maxlength="3" />
+        </div>
       </section>
       <section>
-        <p>Select Tip %</p>
+        <p>Number of People</p>
+        <div>
+          <img src="./images/icon-person.svg" alt="" />
+          <input type="text" name="num-people" id="num-people" />
+        </div>
       </section>
-      <section>
-        <input type="radio" name="tip-percent" value="5%" id="five-perc" />
-        <label for="five-perc">5%</label>
-        <input type="radio" name="tip-percent" value="10%" id="ten-perc" />
-        <label for="ten-perc">10%</label>
-        <input type="radio" name="tip-percent" value="15%" id="fifteen-perc" />
-        <label for="fifteen-perc">15%</label>
-        <input type="radio" name="tip-percent" value="25%" id="twFive-perc" />
-        <label for="twFive-perc">25%</label>
-        <input type="radio" name="tip-percent" value="50%" id="fifty-perc" />
-        <label for="fifty-perc">50%</label>
-        <input type="radio" name="tip-percent" value="" id="five-per" />
-        <label for="five-perc"><input name="tip-percent" type="text" /></label>
-      </section>
-      <button>Submit</button>
-    </form>
 
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
-
+      <div class="total-container">
+        <section>
+          <div>
+            <p>Tip Amount</p>
+            <p class="per-person">/ person</p>
+          </div>
+          <div>
+            <h2>$4.27</h2>
+          </div>
+        </section>
+        <section>
+          <div>
+            <p>Total</p>
+            <p class="per-person">/ person</p>
+          </div>
+          <div>
+            <h2>$4.27</h2>
+          </div>
+        </section>
+        <button class="reset-btn">RESET</button>
+      </div>
+    </main>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

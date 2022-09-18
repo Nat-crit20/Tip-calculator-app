@@ -1,5 +1,9 @@
 const form = document.querySelector("form");
 
+$("#other-field").focus(function () {
+  $("#other").prop("checked", true);
+});
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   const data = new FormData(form);
