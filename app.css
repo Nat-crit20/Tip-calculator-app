@@ -54,7 +54,7 @@ main {
   height: 2rem;
   font-size: 1.5rem;
   border-radius: 0.5rem;
-  color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
 .input-container img {
@@ -62,12 +62,36 @@ main {
   top: 2px;
   left: 5px;
 }
+.tip-buttons {
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem;
+  grid-template-rows: 3rem 3rem;
+  grid-gap: 1rem;
+}
+.tip-buttons button {
+  border: none;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  width: 6rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
 
 .total-container {
-  margin: 2rem;
+  padding: 2rem;
   display: flex;
   width: 40%;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: space-between;
   align-items: stretch;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 10px;
+}
+
+.sub-total-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
