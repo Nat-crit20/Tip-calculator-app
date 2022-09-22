@@ -6,21 +6,39 @@ const customTip = document.getElementById("custom-input");
 const numPeople = document.getElementById("num-people");
 const tipBtn = document.querySelectorAll(".tip-button");
 
-///
+/// initial values
 
-let tip = 25;
-let bill = 0;
-let people = 1;
+let tip;
+let bill;
+let people;
+let tipAmount;
+let finalTotal;
 
 //Functions
-
-const calcTip = function (bill, tipPercent, totalPeople) {
-  let tipAmount = bill * (tipPercent / 100);
-  let results = (bill + tipAmount) / totalPeople;
-  console.log(results);
-  return results;
+const init = function () {
+  tip = 25;
+  bill = 0;
+  people = 1;
+  tipAmount = 0;
+  finalTotal = 0;
+  billInput.value = "";
+  numPeople.value = "";
+  setTotal();
 };
 
+const calcTip = function (bill, tipPercent, totalPeople) {
+  tipAmount = bill * (tipPercent / 100);
+  finalTotal = (bill + tipAmount) / totalPeople;
+  return;
+};
+
+const setTotal = function () {
+  calcTip(bill, tip, people);
+  totalBill.innerText = `$` + tipAmount.toFixed(2);
+  payPerPerson.innerText = `$` + finalTotal.toFixed(2);
+};
+
+init();
 //EvetntListiners
 customTip.addEventListener("input", function (event) {
   event.preventDefault();
@@ -29,13 +47,13 @@ customTip.addEventListener("input", function (event) {
     throw new Error("This is not a number");
   }
   tip = input;
-  calcTip(bill, tip, people);
+  setTotal();
 });
 
 tipBtn.forEach((btn) => {
   btn.addEventListener("click", function (event) {
     tip = event.target.innerText.slice(0, -1);
-    calcTip(bill, tip, people);
+    setTotal();
   });
 });
 
@@ -46,7 +64,7 @@ billInput.addEventListener("input", function (event) {
     throw new Error("This is not a number");
   }
   bill = input;
-  calcTip(bill, tip, people);
+  setTotal();
 });
 
 numPeople.addEventListener("input", function (event) {
@@ -62,5 +80,9 @@ numPeople.addEventListener("input", function (event) {
     throw new Error("Must be greater than zero");
   }
   people = input;
-  calcTip(bill, tip, people);
+  setTotal();
+});
+
+reset.addEventListener("click", function () {
+  init();
 });
