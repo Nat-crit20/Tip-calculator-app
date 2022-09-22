@@ -23,6 +23,7 @@ const init = function () {
   finalTotal = 0;
   billInput.value = "";
   numPeople.value = "";
+  customTip.value = "";
   setTotal();
 };
 

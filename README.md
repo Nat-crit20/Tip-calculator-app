@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/Screenshot%202022-09-22%20at%2011-18-08%20Frontend%20Mentor%20Tip%20calculator%20app.png)
 
 ### Links
 
@@ -47,6 +47,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Val7997](https://www.frontendmentor.io/profile/Val7997)
