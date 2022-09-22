@@ -37,7 +37,11 @@
       <div class="container">
         <div class="tip-calc">
           <section class="bill-container">
-            <p>Bill</p>
+            <div class="title bill-title">
+              <p>Bill</p>
+              <p id="bill-error-msg"></p>
+            </div>
+
             <div class="input-container">
               <input placeholder="0" id="bill" type="text" name="bill" />
             </div>
@@ -54,7 +58,11 @@
             </div>
           </section>
           <section class="people-container">
-            <p>Number of People</p>
+            <div class="title people-title">
+              <p>Number of People</p>
+              <p id="people-error-msg"></p>
+            </div>
+
             <div class="input-container">
               <input
                 placeholder="0"

@@ -10,13 +10,13 @@ body {
 
 .logo {
   width: 50px;
-  margin: 2rem;
+  margin: 4rem;
 }
 
 main {
   background-color: white;
   border-radius: 10px;
-  width: 60%;
+  width: 57%;
   font-family: "Space Mono", monospace;
   box-shadow: hsl(184, 14%, 56%) 0px 7px 29px 0px;
 }
@@ -31,11 +31,12 @@ main {
 
 .tip-calc p {
   color: hsl(184, 14%, 56%);
+  margin: 2rem 0 0 0;
 }
 
 .input-container {
   position: relative;
-  width: 240px;
+  width: 400px;
 }
 
 #bill {
@@ -44,7 +45,20 @@ main {
 #num-people {
   background-image: url("./images/icon-person.svg");
 }
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+#bill-error-msg,
+#people-error-msg {
+  color: red;
+}
+#error-outline {
+  outline: 2px solid red;
+  border-radius: 3px;
+}
 .input-container input {
   background-position: 1rem center;
   background-repeat: no-repeat;
@@ -52,7 +66,7 @@ main {
   background-color: hsl(189, 41%, 97%);
   text-align: right;
   font-family: "Space Mono", monospace;
-  width: 20rem;
+  width: 400px;
   height: 2.5rem;
   font-size: 1.15rem;
   border-radius: 0.5rem;
@@ -71,7 +85,7 @@ main {
 }
 .tip-buttons {
   display: grid;
-  grid-template-columns: 6rem 6rem 6rem;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2.5rem 2.5rem;
   grid-gap: 1rem;
 }
@@ -79,12 +93,17 @@ main {
   border: none;
   background-color: hsl(183, 100%, 15%);
   color: white;
-  width: 6rem;
+  width: 100%;
   height: 2.5rem;
   font-size: 1.15rem;
   border-radius: 0.5rem;
   font-family: "Space Mono", monospace;
   cursor: pointer;
+}
+
+#active-btn {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
 .reset-btn,
@@ -95,7 +114,7 @@ button:hover {
 #custom-input {
   padding: 0;
   border: none;
-  width: 6rem;
+  width: 8rem;
   height: 2.5rem;
   font-size: 1.15rem;
   border-radius: 0.5rem;
